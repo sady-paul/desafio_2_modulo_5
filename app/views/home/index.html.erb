@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>paisajes de chile</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload-0 is-preload-1 is-preload-2">
+
+		<!-- Main -->
+			<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1>PAISAJES</h1>
+				<p>los Mejores Paisajes De Chile <a href="https://www.paisajeo.org/post/2018/05/13/15-paisajes-imperdibles-de-chile">AQUI</a></p>
+				<ul class="icons">
+				 <li><a href="https://x.com/?lang=es" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				 <li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				 <li><a href="https://github.com/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				 <li><a href="https://mail.google.com/" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</header>
+						<!-- Thumbnail -->
+						<section id="thumbnails">
+						  <% images = [
+								['01', 'Torres Del Paine', 'Parque Nacional Torres Del Paine.'],
+								['02', 'Calama', 'Geser Del Tatio.'],
+								['03', 'atacama', 'Radiotelescopio ALMA.'],
+								['04', 'Puerto Varas', 'Cataratas De Petrohue.'],
+								['05', 'La Serena', 'Faro De La Serena.'],
+								['06', 'San Jose De Maipo', 'Embalse El Yeso.'],
+								['07', 'Lo Barnechea', 'Valle Nevado.'],
+								['08', 'Aysén', 'Campos De Hielo.'],
+								['09', 'Atacama', 'Desierto De Atacama.'],
+								['10', 'Isla De Pascua', 'Moai Isla De Pascua.'],
+								['11', 'San Clemente', 'Cascada Invertida.'],
+								['12', 'San Antonio', 'Puerto San Antonio.']
+							  ] %>
+						  <% images.each do |image| %>
+							<article>
+							  <a class="thumbnail" href="<%= asset_path("fulls/#{image[0]}.jpg") %>" data-position="left center">
+								<img src="<%= asset_path("thumbs/#{image[0]}.jpg") %>" alt="" />
+							  </a>
+							  <h2><%= image[1] %></h2>
+							  <p><%= image[2] %></p>
+							</article>
+						  <% end %>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+						</ul>
+						
+					</footer>
+
+        </div>
+
+        <!-- Scripts -->
+	    <script src="<%= asset_path('jquery.min.js') %>"></script>
+	    <script src="<%= asset_path('browser.min.js') %>"></script>
+	    <script src="<%= asset_path('breakpoints.min.js') %>"></script>
+	    <script src="<%= asset_path('main.js') %>"></script>
+	    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		
